@@ -1,16 +1,235 @@
-html,
+.sound{
+	z-index: 999;
+	cursor: pointer;
+}
+
+
+.player-btn img{
+	width: 30px;
+	height: 30px;
+}
+
+.couple-bg {
+
+	
+	/* background-image: url('./bg-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+.couple-bg::after {
+    
+	background: url('./bg-2.png');
+    content: "";
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.title h1 {
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 4rem;
+	margin: 32px 0;
+	color: #674ea7;
+}
+
+.title h2 {
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	color: #e25c67;
+	line-height: 1;
+}
+
+.dance-med {
+	font-family: 'Dancing Script', cursive;
+	font-weight: bolder;
+	font-style: normal;
+	font-size: 32px;
+	color: #674ea7;
+	margin: 16px;
+	text-align: center;
+}
+
+.title h3 {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 24px;
+	color: #674ea7;
+	margin-top: 5px;
+}
+
+.title p {
+	color: #564861;
+	margin: 30px 0 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 16px;
+}
+
+
+
+
+
+* {
+
+	font-family: 'Arvo', serif;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	overflow-x: hidden;
+}
+
+
+#time {
+		background-color: #eee;
+	
+}
+
+.venue {
+	width: auto;
+	height: auto;
+	background-color: #674ea7;
+	border-radius: 16px;
+	text-align: center;
+	color: #fff;
+	padding: 8px;
+	margin-right: 8px;
+}
+
+.venue a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.block {
+	width: 180px;
+	height: 160px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+}
+
+.days {
+	background: linear-gradient(90deg, #b33a46, #9b313c);
+}
+
+.hours {
+	background: linear-gradient(90deg, #a7c3cd, #90a9b2);
+}
+
+.minutes {
+	background-color: #874562;
+}
+
+.seconds {
+	background-color: #145689;
+}
+
+.date {
+	color: #874562;
+	font-weight: 900;
+}
+
+.place {
+	color: #874562;
+	font-weight: 900;
+}
+
+.footer {
+	color: #564861;
+	text-align: center;
+	font-size: 16px;
+	margin: 24px;
+}
+
+.phone {
+	color: #874562
+}
+
+.end-msg {
+	width: auto;
+	height: auto;
+	padding: 12px;
+	background: linear-gradient(90deg, #b33a46, #9b313c);
+	border-radius: 20px;
+	font-size: 14px;
+	color: #fff;
+	font-size: 24px;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.happiness {
+	color: #874562;
+	/* font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 24px; */
 }
+
+
+
+.music {
+	display: none;
+}
+
+
+.pulse2 {
+    animation-name: pulse2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+@keyframes pulse2 {
+    0% {
+        transform: scale(1.1)
+    }
+
+    50% {
+        transform: scale(0.8)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+.pallaki {
+    margin-top: 5%;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 500px) {
+	.title h1 {
+		font-size: 3rem;
+		margin: 10px 0;
+	}
+	
+.pallaki {
+    margin-top: 20%;
+}
+  }
+  @media screen and (max-width: 768px) {
+
+.pallaki {
+    margin-top: 15%;
+}
+  }
