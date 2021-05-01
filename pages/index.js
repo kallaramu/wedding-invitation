@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Confetti from "react-confetti";
-
+import Typewriter from "typewriter-effect/dist/core";
 export default function Pallaki() {
   const [confetti, updateConfetti] = useState(null);
   useEffect(() => {
@@ -16,7 +16,16 @@ export default function Pallaki() {
     );
 
     updateConfetti(<Confetti width={window.innerWidth} height={height} />);
+
+    var typewriter = new Typewriter("#typewriter", {
+      delay: 50,
+    });
+    typewriter
+      .pauseFor(1500)
+      .typeString("<span>Jangachary <i class='pulse2'>♥</i> Pravallika</span>")
+      .start();
   }, []);
+
   return (
     <>
       <div className="container-fluid text-center">
@@ -29,6 +38,8 @@ export default function Pallaki() {
               data-src="https://cdn.dribbble.com/users/101844/screenshots/2095926/palki.gif"
               src="https://cdn.dribbble.com/users/101844/screenshots/2095926/palki.gif"
             ></img>
+            <br />
+            <span id="typewriter"></span>
           </div>
         </div>
       </div>
