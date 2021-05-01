@@ -22,7 +22,7 @@ export default function Pallaki() {
     });
     typewriter
       .pauseFor(1500)
-      .typeString("<span>Jangachary<br/> <i class='pulse2'>♥</i> <br/>Pravallika</span>")
+      .typeString("<span>Jangachary<br/> <i class='pulse2'>♥</i> <br/>Pravalika</span>")
       .start();
   }, []);
 

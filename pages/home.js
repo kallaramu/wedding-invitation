@@ -118,7 +118,7 @@ setTimeout(()=>{
                 <a href="#" target="_blank" className="btn">
                   <div className="venue">SEE THE VENUE</div>
                 </a>
-                <a href="#" download="Jangachary-pravallika" className="btn">
+                <a href="#" download="Jangachary-pravalika" className="btn">
                   <div className="venue">DOWNLOAD INVITATION CARD</div>
                 </a>
               </div>
@@ -169,7 +169,7 @@ setTimeout(()=>{
       <footer className={styles.footer + " text-center"}>
         Crafted by Jangachary with lots of{" "}
         <i className="fa fa-heart pulse2 " style={{ color: "red" }}></i> for
-        Pravallika
+        Pravalika
       </footer>
     </div>
   );
