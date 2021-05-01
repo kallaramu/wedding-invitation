@@ -22,7 +22,7 @@ export default function Pallaki() {
     });
     typewriter
       .pauseFor(1500)
-      .typeString("<span>Jangachary <i class='pulse2'>♥</i> Pravallika</span>")
+      .typeString("<span>Jangachary<br/> <i class='pulse2'>♥</i> <br/>Pravallika</span>")
       .start();
   }, []);
 
@@ -30,7 +30,7 @@ export default function Pallaki() {
     <>
       <div className="container-fluid text-center">
         <div className="row">
-          <div className="col-12">
+          <div className="col-8  mx-auto" >
             {confetti}
             <img
               className="w-50 pallaki"
