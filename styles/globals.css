@@ -310,6 +310,6 @@ body {
 }
 @media (max-width: 768px) {
   .modal-img {
-    max-height: 40vh;
+    max-height: 30vh;
   }
 }

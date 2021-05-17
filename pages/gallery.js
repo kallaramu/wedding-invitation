@@ -20,11 +20,7 @@ export default function Gallery() {
 
   return (
     <>
-      <i
-        data-bs-toggle="modal"
-        data-bs-target="#galleryModal"
-        class="fas fa-image"
-      ></i>
+      
     </>
   );
 }

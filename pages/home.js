@@ -20,7 +20,19 @@ export default function Home() {
   };
 
   const { IMAGES } = WI;
-  const { BRIDEGROOM, BRIDE, DATE, TIME, VENUE, MOBILE, SONG, LOCATION } = WI;
+  const {
+    LIVE_INFO,
+    BRIDEGROOM,
+    BRIDE,
+    DATE,
+    TIME,
+    VENUE,
+    MOBILE,
+    SONG,
+    LOCATION,
+  } = WI;
+
+  const { IS_PRESENT, URL } = LIVE_INFO;
   const [confetti, updateConfetti] = useState(null);
   const [playing, setPlaying] = useState(false);
 
@@ -141,9 +153,9 @@ export default function Home() {
                   <p id="time" className="p-3 w-50 mx-auto t-border">
                     {DATE} {TIME}
                   </p>
-                  at  &nbsp;
+                  <i className="fas fa-map-marker-alt"></i> &nbsp;
                   <a href={LOCATION} target="_blank" className="">
-                     {VENUE}
+                    {VENUE}
                   </a>
                 </div>
               </div>
@@ -153,7 +165,8 @@ export default function Home() {
         <div className="row ">
           <div className="col-12 ">
             <p className="footer">
-              Can't wait to celebrate this auspicious moment of our family with you!
+              Can't wait to celebrate this auspicious moment of our family with
+              you!
             </p>
             <div className="music">
               <audio autoPlay loop hidden controls>
@@ -174,11 +187,20 @@ export default function Home() {
               >
                 <i className="fab fa-instagram"></i>
               </a>
-
               &nbsp;&nbsp;
-              
-              <Gallery/>
-
+              <i
+                data-bs-toggle="modal"
+                data-bs-target="#galleryModal"
+                className="fas fa-image"
+              ></i>
+              &nbsp;&nbsp;
+              <a
+                href={URL}
+                target="_blank"
+                className={"" + (IS_PRESENT==="TRUE" ? " " : "d-none")}
+              >
+                <i className={"fas fa-video "}></i>
+              </a>
             </p>
           </div>
 
@@ -205,7 +227,7 @@ export default function Home() {
       >
         <img ref={playRef} src={"assets/mute.png"} />
       </span>
-      
+
       <footer className={styles.footer + " text-center"}>
         Crafted by Jangachary with lots of{" "}
         <i className="fa fa-heart pulse2 " style={{ color: "red" }}></i> for
@@ -221,7 +243,7 @@ export default function Home() {
         <div className="modal-dialog modal-dialog-centered modal-lg">
           <div className="modal-content">
             <div className="modal-header">
-              <h5 class="modal-title">
+              <h5 className="modal-title">
                 Jangachary{" "}
                 <i className="fa fa-heart pulse2 " style={{ color: "red" }}></i>{" "}
                 Pravalika

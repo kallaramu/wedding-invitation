@@ -6,6 +6,10 @@
   "SONG":"song",
   "LOCATION":"https://www.google.com/maps/place/Sri+Sai+AC+Banquet+Hall/@16.3453158,78.0514964,17z/data=!3m1!4b1!4m5!3m4!1s0x3bca055ddb0d6ed9:0x97d3219102f864a2!8m2!3d16.3453158!4d78.0536851",
   "IMAGES":["https://i.ibb.co/Y4sSTNx/img3.jpg","https://i.ibb.co/W0mMxXL/img5.jpg","https://i.ibb.co/fxHyBb3/img1.jpg","https://i.ibb.co/kGrLHj4/img2.jpg","https://i.ibb.co/g6JcJRd/img4.jpg"],
-  "VENUE":"Sai Ram gardens",
-  "MOBILE":"9553536654"
+  "VENUE":"Sai gardens",
+  "MOBILE":"9553536654",
+  "LIVE_INFO":{
+    "IS_PRESENT":"FALSE",
+    "URL":""
+  }
 }
