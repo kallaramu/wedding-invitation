@@ -240,7 +240,7 @@ export default function Home() {
                       className="img-fluid modal-img mx-auto"
                       key={index}
                       // style={{ width: "100%" }}
-                      src={`assets/gallery/${i}`}
+                      src={i}
                     />
                   ))}
                 </Zoom>
