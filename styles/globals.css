@@ -1,3 +1,4 @@
+@import "react-slideshow-image/dist/styles.css";
 .sound {
   z-index: 999;
   cursor: pointer;
@@ -14,10 +15,18 @@
     background-repeat: no-repeat;
     background-size: contain; */
 }
+
+
+.pelli-melam{
+
+  opacity: 0.4;
+  
+}
+
 .couple-bg::after {
   background: url("./bg-2.png");
   content: "";
-  opacity: 0.1;
+  opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
@@ -34,7 +43,8 @@
   font-weight: bold;
   font-style: normal;
   font-size: 4rem;
-  margin: 32px 0;
+    margin: 0 0 20px 0;
+   
   color: #674ea7;
 }
 
@@ -70,10 +80,16 @@
 
 .title p {
   color: #564861;
-  margin: 30px 0 20px;
+  margin: 20px 0 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 16px;
+}
+
+.t-border{
+  border: 3px solid #674ea7;
+  color: #674ea7 !important;
+  border-radius: 10px;
 }
 
 * {
@@ -144,7 +160,7 @@ body {
   color: #564861;
   text-align: center;
   font-size: 16px;
-  margin: 24px;
+  /* margin: 24px; */
 }
 
 .phone {
@@ -175,9 +191,13 @@ a {
 }
 
 .music {
-  display: none;
+  /* display: none; */
 }
 
+.slideIn {
+  animation: slideIn 0.5s forwards;
+  -webkit-animation: slideIn 0.5s forwards;
+}
 .pulse2 {
   animation-name: pulse2;
   animation-duration: 1s;
@@ -224,4 +244,57 @@ a {
 }
 #typewriter i {
   color: red;
+}
+
+
+.ganesh-icon {
+  position: absolute;
+  width: 50px;
+  margin-left: auto;
+  left: 45% !important;
+}
+
+.heart-shape{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: rgba(250,184,66, 1);
+}
+.heart-shape:before,
+.heart-shape:after{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(250,184,66, 1);
+}
+.heart-shape:before{
+  bottom: 0px;
+  left: -100px;
+}
+.heart-shape:after{
+  top: -100px;
+  right: 0px;
+}
+.preview-img{
+  width: 70%;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.slide-container img{
+/* height: 400px; */
+width: auto;
+}
+.modal-img{
+  max-height: 50vh;
 }

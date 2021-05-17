@@ -9,10 +9,15 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
+    
+    "framer-motion": "^4.1.16",
     "next": "10.x",
+    "popper.js": "^1.16.1",
     "react": "17.x",
+    
     "react-confetti": "^6.0.1",
     "react-dom": "17.x",
+    "react-slideshow-image": "3.3.0",
     "typewriter-effect": "^2.17.0"
   },
   "devDependencies": {}

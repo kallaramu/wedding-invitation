@@ -1,48 +1,15 @@
 import { useEffect, useState } from "react";
 import Confetti from "react-confetti";
 import Typewriter from "typewriter-effect/dist/core";
-export default function Pallaki() {
+import Home from "./home";
+import Pallaki from "./pallaki";
+export default function index() {
   const [confetti, updateConfetti] = useState(null);
+  const [ele, updateEle] = useState(<Pallaki />);
   useEffect(() => {
-    var body = document.body,
-      html = document.documentElement;
-
-    var height = Math.max(
-      body.scrollHeight,
-      body.offsetHeight,
-      html.clientHeight,
-      html.scrollHeight,
-      html.offsetHeight
-    );
-
-    updateConfetti(<Confetti width={window.innerWidth} height={height} />);
-
-    var typewriter = new Typewriter("#typewriter", {
-      delay: 50,
-    });
-    typewriter
-      .pauseFor(1500)
-      .typeString("<span>Jangachary<br/> <i class='pulse2'>♥</i> <br/>Pravalika</span>")
-      .start();
-  }, []);
-
-  return (
-    <>
-      <div className="container-fluid text-center">
-        <div className="row">
-          <div className="col-8  mx-auto" >
-            {confetti}
-            <img
-              className="w-50 pallaki"
-              data-srcset="https://cdn.dribbble.com/users/101844/screenshots/2095926/palki.gif 300w, https://cdn.dribbble.com/users/101844/screenshots/2095926/palki.gif 400w, https://cdn.dribbble.com/users/101844/screenshots/2095926/palki.gif 600w, https://cdn.dribbble.com/users/101844/screenshots/2095926/palki.gif 800w"
-              data-src="https://cdn.dribbble.com/users/101844/screenshots/2095926/palki.gif"
-              src="https://cdn.dribbble.com/users/101844/screenshots/2095926/palki.gif"
-            ></img>
-            <br />
-            <span id="typewriter"></span>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+    setTimeout(() => {
+      updateEle(<Home />);
+    }, 4500);
+  });
+  return <>{ele}</>;
 }
