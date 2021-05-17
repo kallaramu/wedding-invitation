@@ -109,7 +109,6 @@ export default function Home() {
                 className="img-fluid top-left-decoration position-absolute top-0 start-0"
                 src="assets/flower-top-left.png"
               />
-              <Gallery />
             </div>
             <div className="col-8 col-sm-6 col-lg-6 position-relative">
               <section id="media"></section>
@@ -118,27 +117,6 @@ export default function Home() {
                 className="img-fluid top-left-decoration position-absolute top-0 ganesh-icon"
                 src="assets/ganesha.png"
               />
-              <div className="wrap position-relative mt-5">
-                <div className="couple-bg"></div>
-                <div className="title">
-                  <h1>{BRIDEGROOM} </h1>
-                  <h2>&</h2>
-                  <h1>{BRIDE} </h1>
-                  {/* ON DATE MONTH YEAR, AT PLACE, AREA */}
-                  <h3>Are getting married</h3>
-                  <p>
-                    on&nbsp;
-                    <span className="date">{DATE}</span>, At &nbsp;
-                    <span className="place">{VENUE}</span>
-                  </p>
-
-                  <p id="time" className="p-3 w-50 mx-auto t-border">
-                    <i className="far fa-clock"></i>
-                    &nbsp; {TIME}
-                  </p>
-                  <span className="dance-med">Lunch follows</span>
-                </div>
-              </div>
             </div>
             <div className="col-2 col-sm-3 col-lg-3 position-relative">
               <img
@@ -146,36 +124,36 @@ export default function Home() {
                 alt="image-top-right"
                 className="img-fluid top-right-decoration position-absolute top-0 end-0"
               />
-
-              <div className="actions mx-auto position-absolute top-50">
-                <img
-                  src="assets/pelliMelam.png"
-                  alt="image-top-right"
-                  className="img-fluid top-right-decoration pelli-melam"
-                />
-                <a href={LOCATION} target="_blank" className="btn">
-                  <div className="venue">SEE THE VENUE</div>
-                </a>
-                <a
-                  href={`assets/sriramadasu-invitation.pdf`}
-                  download="Jangachary-pravalika"
-                  className="btn"
-                >
-                  <div className="venue">DOWNLOAD INVITATION CARD</div>
-                </a>
-              </div>
             </div>
           </div>
 
           <div className="row ">
-            <div className="col-12"></div>
-            <div className="col-4 "></div>
+            <div className="col-12">
+              <div className="wrap position-relative mt-5">
+                <div className="couple-bg"></div>
+                <div className="title mt-2">
+                  <h1>{BRIDEGROOM} </h1>
+                  <h2>&</h2>
+                  <h1>{BRIDE} </h1>
+                  {/* ON DATE MONTH YEAR, AT PLACE, AREA */}
+                  <h3>Are getting married</h3>
+                  on
+                  <p id="time" className="p-3 w-50 mx-auto t-border">
+                    {DATE} {TIME}
+                  </p>
+                  at  &nbsp;
+                  <a href={LOCATION} target="_blank" className="">
+                     {VENUE}
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="row ">
           <div className="col-12 ">
             <p className="footer">
-              Can't wait to celebrate auspicious moment of our family with you!
+              Can't wait to celebrate this auspicious moment of our family with you!
             </p>
             <div className="music">
               <audio autoPlay loop hidden controls>
@@ -189,13 +167,33 @@ export default function Home() {
               <a href="https://twitter.com/jangacharysri" target="_blank">
                 <i className="fab fa-twitter"></i>
               </a>
+              &nbsp;&nbsp;
               <a
                 href=" https://www.instagram.com/jangachary_sriramadas/"
                 target="_blank"
               >
                 <i className="fab fa-instagram"></i>
               </a>
+
+              &nbsp;&nbsp;
+              
+              <Gallery/>
+
             </p>
+          </div>
+
+          <div className="col-12">
+            <div className="actions mx-auto text-center">
+              <div className="">
+                <a
+                  href={`assets/sriramadasu-invitation.pdf`}
+                  download="Jangachary-pravalika"
+                  className="btn btn-outline-info"
+                >
+                  VIEW INVITATION CARD
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -207,6 +205,7 @@ export default function Home() {
       >
         <img ref={playRef} src={"assets/mute.png"} />
       </span>
+      
       <footer className={styles.footer + " text-center"}>
         Crafted by Jangachary with lots of{" "}
         <i className="fa fa-heart pulse2 " style={{ color: "red" }}></i> for
@@ -223,7 +222,9 @@ export default function Home() {
           <div className="modal-content">
             <div className="modal-header">
               <h5 class="modal-title">
-                Jangachary <i className="fa fa-heart pulse2 " style={{ color: "red" }}></i> Pravalika
+                Jangachary{" "}
+                <i className="fa fa-heart pulse2 " style={{ color: "red" }}></i>{" "}
+                Pravalika
               </h5>
               <button
                 type="button"

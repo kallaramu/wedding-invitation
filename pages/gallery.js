@@ -20,24 +20,11 @@ export default function Gallery() {
 
   return (
     <>
-      <div
-        className="position-absolute bottom-0"
-      >
-        <motion.div
-          animate={{
-            scale: [0.8, 1],
-          }}
-          transition={{
-            duration: 1,
-            ease: "easeIn",
-          }}
-          data-bs-toggle="modal"
-          data-bs-target="#galleryModal"
-        >
-          <img src={`assets/gallery/preview.jpg`} className="preview-img" />
-        </motion.div>
-      </div>
-
+      <i
+        data-bs-toggle="modal"
+        data-bs-target="#galleryModal"
+        class="fas fa-image"
+      ></i>
     </>
   );
 }
