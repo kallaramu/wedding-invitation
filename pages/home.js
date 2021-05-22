@@ -197,7 +197,7 @@ export default function Home() {
               <a
                 href={URL}
                 target="_blank"
-                className={"" + (IS_PRESENT==="TRUE" ? " " : "d-none")}
+                
               >
                 <i className={"fas fa-video "}></i>
               </a>
