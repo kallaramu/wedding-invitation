@@ -208,7 +208,7 @@ export default function Home() {
             <div className="actions mx-auto text-center">
               <div className="">
                 <a
-                  href={`assets/avanaapu.pdf`}
+                  href={`assets/avanapu.pdf`}
                   download="Jangachary-pravalika"
                   className="btn btn-outline-info"
                 >
