@@ -247,9 +247,9 @@ export default function Home() {
           <div className="modal-content">
             <div className="modal-header">
               <h5 className="modal-title">
-                Jangachary{" "}
+                Ravicharan{" "}
                 <i className="fa fa-heart pulse2 " style={{ color: "red" }}></i>{" "}
-                Pravalika
+                Meghana
               </h5>
               <button
                 type="button"
