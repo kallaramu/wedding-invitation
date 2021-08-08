@@ -177,11 +177,14 @@ export default function Home() {
             <p className="happiness fs-2 text-center">
               Join us in our happiness!
               <br />
-              <a href="https://twitter.com/jangacharysri" target="_blank">
+              <a className="d-none" href="https://twitter.com/jangacharysri" target="_blank">
                 <i className="fab fa-twitter"></i>
               </a>
+              <a href="https://www.facebook.com/ravicharan.avanapu" target="_blank">
+                <i className="fab fa-facebook"></i>
+              </a>
               &nbsp;&nbsp;
-              <a
+              <a className="d-none"
                 href=" https://www.instagram.com/jangachary_sriramadas/"
                 target="_blank"
               >
