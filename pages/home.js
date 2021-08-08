@@ -208,7 +208,7 @@ export default function Home() {
             <div className="actions mx-auto text-center">
               <div className="">
                 <a
-                  href={`assets/sriramadasu-invitation.pdf`}
+                  href={`assets/avanaapu.pdf`}
                   download="Jangachary-pravalika"
                   className="btn btn-outline-info"
                 >
@@ -229,9 +229,9 @@ export default function Home() {
       </span>
 
       <footer className={styles.footer + " text-center"}>
-        Crafted by Jangachary with lots of{" "}
+        Crafted by Ravicharan with lots of{" "}
         <i className="fa fa-heart pulse2 " style={{ color: "red" }}></i> for
-        Pravalika
+        Meghana
       </footer>
       <div
         className="modal fade"
