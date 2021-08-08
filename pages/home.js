@@ -194,7 +194,7 @@ export default function Home() {
                 className="fas fa-image"
               ></i>
               &nbsp;&nbsp;
-              <a style="display:none"
+              <a className="d-none"
                 href={URL}
                 target="_blank"
                 
