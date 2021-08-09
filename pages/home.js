@@ -164,13 +164,13 @@ export default function Home() {
         </div>
         <div className="row ">
           <div className="col-12 ">
-            <p className="happiness fs-5 text-center">
-              Lunch: 14 AUGUST 2021 12:30 AM. onwards at Kunthi madhva swamy temple, padmanabham        
-            </p>
             <p className="footer">
               Can't wait to celebrate this auspicious moment of our family with
               you!
             </p>
+            <p className="happiness fs-5 text-center">
+              Lunch: 14 AUGUST 2021 12:30 AM. onwards at Kunthi madhva swamy temple, padmanabham        
+            </p>            
             <div className="music">
               <audio autoPlay loop hidden controls>
                 <source src={`assets/${SONG}.mp3`} type="audio/mp3" />
