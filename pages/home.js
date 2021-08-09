@@ -165,7 +165,9 @@ export default function Home() {
         <div className="row ">
           <div className="col-12 ">
             <p className="footer">
-              <b>Lunch: 15 AUGUST 2021 12:30 AM. onwards at Kunthi maddhva swamy temple, padmanabham </b><br>
+              Lunch: 14 AUGUST 2021 12:30 AM. onwards at Kunthi maddhva swamy temple, padmanabham        
+            </p>
+            <p className="footer">
               Can't wait to celebrate this auspicious moment of our family with
               you!
             </p>
