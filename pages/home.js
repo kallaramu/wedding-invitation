@@ -145,8 +145,6 @@ export default function Home() {
                 <div className="couple-bg"></div>
                 <div className="title mt-2">
                   <h1>{BRIDEGROOM} </h1>
-                  <br></br>
-                  <br></br>
                   <h2>&</h2>
                   <h1>{BRIDE} </h1>
                   {/* ON DATE MONTH YEAR, AT PLACE, AREA */}
