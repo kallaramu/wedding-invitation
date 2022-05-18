@@ -169,7 +169,7 @@ export default function Home() {
               you!
             </p>
             <p className="happiness fs-5 text-center">
-              Lunch: 14 AUGUST 2021 12:30 AM. onwards at Kunthi madhva swamy temple, padmanabham        
+              Lunch: 25 MAY 2022 12:00 AM. onwards at Laxmi ganapathi kalyana mandapam,ayyannapeta,gantyada road,vizianagaram        
             </p>            
             <div className="music">
               <audio autoPlay loop hidden controls>
