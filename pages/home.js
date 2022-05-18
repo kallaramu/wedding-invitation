@@ -169,7 +169,7 @@ export default function Home() {
               you!
             </p>
             <p className="happiness fs-5 text-center">
-              Lunch: 25 MAY 2022 12:00 AM. onwards at Laxmi ganapathi kalyana mandapam,ayyannapeta,gantyada road,vizianagaram        
+              Lunch: 25 MAY 2022 12:00 AM. onwards at Laxmi ganapathi kalyana mandapam,Ayyannapeta,Gantyada road,Vizianagaram        
             </p>            
             <div className="music">
               <audio autoPlay loop hidden controls>
@@ -183,7 +183,7 @@ export default function Home() {
               <a className="d-none" href="https://twitter.com/jangacharysri" target="_blank">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="https://www.facebook.com/ravicharan.avanapu" target="_blank">
+              <a href="https://www.facebook.com/gorja.dinesh" target="_blank">
                 <i className="fab fa-facebook"></i>
               </a>
               &nbsp;&nbsp;
