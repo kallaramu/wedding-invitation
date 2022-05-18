@@ -235,9 +235,9 @@ export default function Home() {
       </span>
 
       <footer className={styles.footer + " text-center"}>
-        Crafted by Ravicharan with lots of{" "}
+        Crafted by Dinu with lots of{" "}
         <i className="fa fa-heart pulse2 " style={{ color: "red" }}></i> for
-        Meghana
+        Teja
       </footer>
       <div
         className="modal fade"
