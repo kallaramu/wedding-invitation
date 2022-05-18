@@ -25,7 +25,7 @@ export default function Pallaki() {
     typewriter
       .pauseFor(1500)
       .typeString(
-        "<span>Ravicharan<br/> <i class='pulse2'>♥</i> <br/>Meghana</span>"
+        "<span>Dinu<br/> <i class='pulse2'>♥</i> <br/>Teja</span>"
       )
       .start();
   }, []);
